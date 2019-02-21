@@ -1,0 +1,302 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>Ej1 - Aritz Oscoz Irurozqui</title>
+</head>
+ 
+<body>
+
+<!-- EMPIEZO MI PÁGINA -->
+<!-- SPACING https://getbootstrap.com/docs/4.0/utilities/spacing/ -->
+
+ <!-- HEADER -->
+<header>
+ <nav class="navbar navbar-expand-xl navbar-dark fixed-top" style="background-color: #585858;""">  <!-- BARRA DE ARRIBA FIJA (todo el header dentro)-->
+
+ 	<!-- IMG -->
+	  <div class="navbar-brand mr-3">
+		<img src="https://www.youtube.com/yt/about/media/images/brand-resources/logos/YouTube-logo_monochrome_light.svg" class="img-rounded" alt="IMG" width="100" height="30"> 
+	  </div>
+ 	<!-- TXT -->  	
+	<a class="navbar-brand ml-3" href="Home.html"> CUALQUIER TEXTO</a>
+
+	  <!-- Definimos BUTTON MENÚ -->  	
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse ml-3" id="navbarCollapse">
+	  <!-- Algunas páginas por grupos-->
+			<div class="btn-toolbar mt-1 mb-1" role="toolbar" aria-label="Toolbar with button groups">
+			<!-- Grupo1-->
+			  <div class="btn-group mr-1 ml-1" role="group" aria-label="First group">
+				<a  href="Page1A.html" type="button" class="btn btn-primary">Page1A</a>
+				<a  href="Page1B.html" type="button" class="btn btn-primary">Page1B</a>
+			  </div>
+			 <!-- Grupo2-->
+			  <div class="btn-group mr-1 ml-1" role="group" aria-label="Second group">
+				<a type="button" class="btn btn-primary">Page2</a>
+			  </div>
+			<!-- Grupo3 (Menú Desplegable hacia abajo) -->
+			  <div class="btn-group mr-3 ml-1" role="group" aria-label="Third group">
+				<a id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Dropdown
+				</a>
+				<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+				  <a class="dropdown-item" href="#">Dropdown1</a>
+				  <a class="dropdown-item" href="#">Dropdown2</a>
+				  <a class="dropdown-item" href="#">Dropdown3</a>
+				</div>
+			  </div>
+			</div>
+		<!-- Cierro algunas páginas por grupos-->
+
+		<!-- IDIOMAS (con lista ul/li) -->
+        <ul class="navbar-nav mr-auto mt-1 mt-1">
+          <li class="nav-item active">
+		  <a href="#">
+		   <img src="https://www.svgrepo.com/show/37484/basque-country.svg" class="img-rounded  mt-1 mb-1" alt="IMG" width="30" height="30">
+		  </a>	
+		  <a href="#">
+		   <img src="https://www.svgrepo.com/show/110211/united-kingdom.svg" class="img-rounded mr-1 ml-1 mt-1 mb-1" alt="IMG" width="30" height="30"> 
+		  </a>
+		  <a href="#">
+		   <img src="https://www.svgrepo.com/show/35012/spain.svg" class="img-rounded  mt-1 mb-1" alt="IMG" width="30" height="30">
+		  </a>
+          </li>
+        </ul>
+		<!-- Cierro IDIOMAS (con lista ul/li) -->
+		
+		<!-- BUSCADOR -->
+        <form class="form-inline mt-1 mb-1">
+          <input class="form-control mr-sm-2" type="text" placeholder="¿Qué te apetece buscar?" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">BUSCAR</button>
+        </form>
+      </div>
+    </nav>	
+
+</header>
+ <!-- Cierro el HEADER -->
+
+
+
+<main>
+
+<br>
+<br>
+
+<!-- TOAST -->
+
+<div class="container contact mt-5 mb-5">
+
+<div class="toast"><!-- TOAST1 que desaparece -->
+  <div class="toast-header">
+    Toast Header
+  </div>
+  <div class="toast-body">
+    Some text inside the toast body
+  </div>
+</div>
+
+<div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-autohide="false"> <!-- TOAST2 que hay que cerrar -->
+  <div class="toast-header">
+    <img src="..." class="rounded mr-2" alt="...">
+    <strong class="mr-auto">Bootstrap</strong>
+    <small>11 mins ago</small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body">
+    Hello, world! This is a toast message y lo tienes que cerrar.
+  </div>
+</div>
+
+</div>
+<!-- Cierro TOAST -->
+
+
+<!-- TOOLTIP -->
+<div class="container contact mt-5">
+
+<div style="text-align:center">
+	<button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Top shoes" style="margin:20px;">
+	  Shoes
+	</button>
+	<button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="right" title="Right boot" style="margin:20px;">
+	  Boots
+	</button>
+	<button type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="Bottom uggs" style="margin:20px;">
+	  Ugg
+	</button>
+	<button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="left" title="Left sock" style="margin:20px;">
+	  Socks
+	</button>
+</div>
+
+<div style="text-align:center">
+	<!-- HTML to write -->
+	<a href="#" data-toggle="tooltip" title="Some tooltip text!">Hover over me</a>
+	<!-- Generated markup by the plugin -->
+	<div class="tooltip bs-tooltip-top" role="tooltip">
+	  <div class="arrow"></div>
+	  <div class="tooltip-inner">
+		Some tooltip text!
+	  </div>
+	</div>
+
+	<p>
+	Busca lo que quieras en: 
+		<a target="_blank" href="https://www.google.es/" data-toggle="tooltip" data-placement="top" title="Build advanced layouts easily with CSS!">
+		google
+		</a>
+	, no te defraudará!
+	</p>
+</div>
+
+</div>
+<!-- Cierro TOOLTIP -->
+
+
+<!-- POPOVERS -->
+<div class="container contact mt-5 mb-5">
+<div style="text-align:center">
+
+	<button type="button" class="btn btn-secondary" data-toggle="popover" data-placement="top" data-content="Mira que bien fucniona esto." style="margin:40px;">
+	  Click me TOP
+	</button>
+	<button type="button" class="btn btn-secondary" data-toggle="popover" data-placement="left" data-content="Mira que bien fucniona esto." style="margin:40px;">
+	  Click me LEFT
+	</button>
+	<button type="button" class="btn btn-secondary" data-toggle="popover" data-placement="bottom" data-content="Mira que bien fucniona esto." style="margin:40px;">
+	  Click me BOTTOM
+	</button>
+	<button type="button" class="btn btn-secondary" data-toggle="popover" data-placement="right" data-content="Mira que bien fucniona esto." style="margin:40px;">
+	  Click me RIGHT
+	</button>
+	<button type="button" class="btn btn-secondary" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Mira que bien fucniona esto." style="margin:40px;">
+	  HOVER over me
+	</button>
+</div>
+</div>
+<!-- Cierro POPOVERS -->
+
+
+<!-- Formulario de Contacto -->
+<div class="container contact mb-5">
+	
+	<div class="row">
+		<div class="col-md-3 bg-warning text-dark mt-5 ">
+			<div class="contact-info  pl-2 pt-5 pb-5 ">
+				<h2>Contacta con nosotros</h2>
+				<h4>We would love to hear from you !</h4>
+			</div>
+		</div>
+		<div class="col-md-9">
+			<div class="contact-form mt-5 pt-3">
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="fname">Nombre:</label>
+				  <div class="col-sm-10">          
+					<input type="text" class="form-control" id="fname" placeholder="Aritz" name="fname">
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="lname">Apellidos:</label>
+				  <div class="col-sm-10">          
+					<input type="text" class="form-control" id="lname" placeholder="Oscoz Irurozqui" name="lname">
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="email">Email:</label>
+				  <div class="col-sm-10">
+					<input type="email" class="form-control" id="email" placeholder="oscoz.100684@e.unavarra.es" name="email">
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="comment">Comentarios:</label>
+				  <div class="col-sm-10">
+					<textarea class="form-control" rows="5" id="comment" placeholder="Esto es un ejemplo etc. etc. etc."></textarea>
+				  </div>
+				</div>
+				<div class="form-group">        
+				  <div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-success">ENVÍAR FORMULARIO</button>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Cierre Formulario de Contacto -->
+
+</main>
+
+<!-- FOOTER -->
+<footer class="page-footer font-small teal pt-4" style="background-color: #BDBDBD;""">
+    <div class="container-fluid text-center text-md-left">
+	   <div class="row">
+
+        <!-- Columna1 -->
+        <div class="col-md-4 pl-5 mt-md-0 mt-3">
+          <!-- Content -->
+          <h5 class="text-uppercase font-weight-bold">Footer text 1</h5>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae harum esse fugiat. Itaque, culpa?</p>
+        </div>
+
+        <!-- Columna2 -->
+        <div class="col-md-4 pl-5 mt-md-0 mt-3">
+          <!-- Content -->
+          <h5 class="text-uppercase font-weight-bold">Footer text 2</h5>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae harum esse fugiat. Itaque, culpa?</p>
+        </div>
+
+		<!-- Columna3 -->
+        <div class="col-md-4 pl-5 mt-md-0 mt-3">
+          <!-- Content -->
+          <h5 class="text-uppercase font-weight-bold">Footer text 3</h5>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae harum esse fugiat. Itaque, culpa?</p>
+        </div>
+
+      </div>
+    </div>
+</footer>
+<!-- Cierro FOOTER -->
+
+
+<!-- FIN -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  
+	<!-- Necesario para utilizar TOAST-->
+	<script>
+	$(document).ready(function(){
+		$('.toast').toast('show');
+	});
+	</script>
+
+	<!-- Necesario para utilizar TOOLTIP-->
+	<script>
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
+	</script>
+		
+	<!-- Necesario para utilizar Popover-->
+	<script>
+	$(function () {
+		$('[data-toggle="popover"]').popover()
+	})
+	</script>
+  
+  </body>
+</html>
